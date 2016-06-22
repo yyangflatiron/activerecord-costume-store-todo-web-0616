@@ -10,6 +10,8 @@ class CreateHauntedHouses < ActiveRecord::Migration
       t.date :opening_date
       t.date :closing_date
       t.text :description
+      #do we need timestamps here?
+      t.timestamps null: false
     end
   end
 end
